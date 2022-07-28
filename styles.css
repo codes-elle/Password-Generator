@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.generator-container{
+    position: relative;
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+    height: 400px;
+    width: 500px;
+    text-align: center;
+}
+
+.output-box{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+}
+
+.customize{
+    position: absolute;
+}
+.customize-heading h4{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.password-checkboxes{
+    display: grid;
+}
+
+label{
+    font-size: 2rem;
+}
+
+button{
+    font-size: 2rem;
+    margin-top: 30px;
+    position: absolute;
+}
