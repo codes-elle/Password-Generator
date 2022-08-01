@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .generator-container{
     position: relative;
     border: 2px solid black;
