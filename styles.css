@@ -12,13 +12,10 @@ body{
 }
 
 .generator-container{
-    position: relative;
     border: 2px solid black;
-    display: block;
     margin: 0 auto;
     height: 400px;
     width: 500px;
-    text-align: center;
 }
 
 .output-box{
