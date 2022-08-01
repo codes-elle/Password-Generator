@@ -11,7 +11,7 @@
     
     <div class="generator-container">
         <div class="output-box" id="output">
-            <i class="fa-solid fa-copy">
+            <i class="fa-solid fa-copy" id="copyToClipboard">
         </div>
 
         <div class="customize">
@@ -21,7 +21,8 @@
 
             <div class="bottom">
                 <div class="password-length-container">
-
+                    <label>Password Length</label>
+                    <input type="number" id="length" min='8' max='25' value='25' />
                 </div>
 
                 <div class="password-checkboxes">
@@ -37,7 +38,7 @@
             </div>
         </div>
 
-        <button id="generateButton">Generate Password</button>
+        <button class="btn btn-large" id="generateButton">Generate Password</button>
     </div>
 
 
