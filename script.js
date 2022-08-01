@@ -7,7 +7,7 @@ const numericEl = document.getElementById('numeric');
 const symbolsEl = document.getElementById('symbols');
 const generatePassword = document.getElementById('generateButton');
 
-const randomFunction() {
+const randomFunction = {
   lower: getRandomLower,
   upper: getRandomUpper,
   number: getRandomNumber,
