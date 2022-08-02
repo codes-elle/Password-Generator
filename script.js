@@ -26,7 +26,7 @@ clipboard.addEventListener('click', () =>{
 textarea.value = password;
 document.body.appendChild('textarea');
 textarea.select();
-document.execCommand('copy');
+Document.execCommand('copy');
 textarea.remove();
 alert();
 });
@@ -40,17 +40,17 @@ generate.addEventListener('click', () => {
   const hasNumber = numericEl.checked;
   const hasSymbol = symbolsEl.checked;
   
-  outputEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbols, length);
+  outputEl.innerHTML = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 });
 
 
 function generatePassword(lower, upper, number, symbol, length) {
-let generatedPassword = '';
-const typesCount = lower + upper + number + symbol;
-const typesArr = [{lower}, {upper},{number},{symbol},].filter(item => Object.value(item)[0]);
+  let generatedPassword = '';
+  const typesCount = lower + upper + number + symbol;
+  const typesArr = [{lower}, {upper},{number},{symbol},].filter(item => Object.value(item)[0]);
   
   //doesnt have a selected type
-if(typesCount === 0) {
+  if(typesCount === 0) {
   return '';
   }
  //create a loop
@@ -62,8 +62,8 @@ if(typesCount === 0) {
      
      return finalPassword;
   });
+  }
 }
-
   
 function getRandomLower(){
   return String.fromCharCcode(Math.floor(Math.random()* 26) + 97);
@@ -81,8 +81,3 @@ function getRandomSymbol(){
   const symbols = "!@#$%^&-";
   return symbols[Math.floor(Math.random()*symbols.length)];
 }
-
-// uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-// lowercase = "abcdefghijklmnopqrstuvwxyz"
-//numeric = "0123456789"
-//symbols = "!@#$%^&-"
